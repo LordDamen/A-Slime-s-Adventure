@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Movement.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Movement.cs" Line="64" Column="8" />
+      <File FileName="Assets\Scripts\AnimationPlayer.cs" Line="2" Column="34" />
+      <File FileName="Assets\Scripts\Quit.cs" Line="9" Column="21" />
+      <File FileName="Assets\Scripts\CheckPoint.cs" Line="41" Column="2" />
+      <File FileName="Assets\Scripts\floatPlat.cs" Line="23" Column="1" />
+      <File FileName="Assets\Scripts\DestoyDelay.cs" Line="12" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
