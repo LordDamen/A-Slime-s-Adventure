@@ -36,6 +36,9 @@ public class CheckPoint : MonoBehaviour {
 			WinScreen.SetActive (true);
 			CurrentGame.SetActive (false);
 		}
+		if (other.tag == "OutOfBounds") {
+			transform.position = LastCheckpoint;	
+		}
 	}
 
 }
