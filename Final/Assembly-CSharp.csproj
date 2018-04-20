@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AlienPoint.cs" />
      <Compile Include="Assets\Scripts\AnimationPlayer.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\DestoyDelay.cs" />
@@ -59,6 +60,8 @@
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Pickup.cs" />
      <Compile Include="Assets\Scripts\Quit.cs" />
+     <Compile Include="Assets\Scripts\startRestart.cs" />
+     <Compile Include="Assets\Scripts\SwaptResart.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/benchout/Documents/GitHub/Final-For-Gpe/Final/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
