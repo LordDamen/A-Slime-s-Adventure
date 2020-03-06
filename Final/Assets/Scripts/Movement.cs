@@ -25,8 +25,9 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		Debug.DrawRay (transform.position, Vector3.down * GroundDistance, Color.cyan);
-		// checks if the player is gounded
+        // Visual Aspect
+		//Debug.DrawRay (transform.position, Vector3.down * GroundDistance, Color.cyan);
+		// checks if the player is grounded
 		RaycastHit2D hit = Physics2D.Raycast (transform.position, Vector3.down, GroundDistance, GroundArea);
 
 		if (hit.collider != null) {
@@ -36,7 +37,7 @@ public class Movement : MonoBehaviour {
 			IsGrounded = false;
 		}
 
-		if (Input.GetKey ("left"))
+		if (Input.GetKey ("left") || Input.GetKey(KeyCode.A))
 			{
 				transform.position -= transform.right *PlayerSpeed * Time.deltaTime;
 				if (IsFlipped == false) 
@@ -46,7 +47,7 @@ public class Movement : MonoBehaviour {
 				}
 			}
 
-		if (Input.GetKey ("right")) 
+		if (Input.GetKey ("right") || Input.GetKey(KeyCode.D)) 
 				{
 					transform.position += transform.right *PlayerSpeed * Time.deltaTime;
 					if (IsFlipped == true) 
@@ -55,7 +56,7 @@ public class Movement : MonoBehaviour {
 						IsFlipped = false;
 					}
 				}
-		if (Input.GetKeyDown ("up")) 
+		if (Input.GetKeyDown ("up") || Input.GetKey(KeyCode.W)) 
 			{
 				if (JumpsLeft > 0) 
 				{
@@ -65,8 +66,23 @@ public class Movement : MonoBehaviour {
 				}
 			}
 		if (Input.GetKeyDown ("escape")) {
-			Pause.SetActive (true);
-			CurrentRunning.SetActive (false);
+
+
+            if (!Pause.activeSelf)
+            {
+                Pause.SetActive(true);
+            } else
+            {
+                Pause.SetActive(false);
+            }
+            if (!CurrentRunning.activeSelf)
+            {
+                CurrentRunning.SetActive(false);
+            }
+            else
+            {
+                CurrentRunning.SetActive(true);
+            }
 		}
 
 
